@@ -8,6 +8,8 @@
         <br />
         <button @click="goBack">Back {Go}</button>
         <br />
+        <button @click="testQuery">Test Query</button>
+        <br />
     </div>
 </template>
 
@@ -24,6 +26,19 @@ export default {
         goBack() {
             // Kembali
             this.$router.go(-1);
+        },
+        testQuery() {
+            // Dynamic Route memiliki 2 cara
+
+            // Cara pertama
+            // this.$router.push({
+            //     name: "user",
+            //     params: { username: "Dimas" },
+            //     query: { id: 123 },
+            // });
+
+            // Cara kedua
+            this.$router.push("/user/Dimas?id=123231");
         },
     },
 };
