@@ -20549,6 +20549,9 @@ var routes = [{
   name: "home",
   component: _components_HomeComponent_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
 }, {
+  path: "/rumah",
+  redirect: "/"
+}, {
   path: "/example",
   name: "example",
   component: _components_ExampleComponent_vue__WEBPACK_IMPORTED_MODULE_0__["default"]

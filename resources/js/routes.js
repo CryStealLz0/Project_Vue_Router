@@ -12,6 +12,10 @@ export const routes = [
         component: Home,
     },
     {
+        path: "/rumah",
+        redirect: "/",
+    },
+    {
         path: "/example",
         name: "example",
         component: Example,
