@@ -1,4 +1,3 @@
-!
 <template>
     <div>
         <h1>This Is Home !</h1>
@@ -38,7 +37,7 @@ export default {
             // });
 
             // Cara kedua
-            this.$router.push("/user/Dimas?id=123231");
+            this.$router.push("/user/Dimas?id=123");
         },
     },
 };

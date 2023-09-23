@@ -1,10 +1,12 @@
 import Example from "./components/ExampleComponent.vue";
 import Home from "./components/HomeComponent.vue";
-import User from "./components/UsernameComponent.vue";
+import User from "./components/UserComponent.vue";
+import Hello from "./components/HelloComponent.vue";
+import Bye from "./components/ByeComponent.vue";
 
 export const routes = [
     {
-        path: "/home",
+        path: "/",
         name: "home",
         component: Home,
     },
@@ -17,5 +19,15 @@ export const routes = [
         path: "/user/:username?",
         name: "user",
         component: User,
+        children: [
+            {
+                path: "hello",
+                component: Hello,
+            },
+            {
+                path: "bye",
+                component: Bye,
+            },
+        ],
     },
 ];

@@ -7,9 +7,9 @@
 
                     <div class="card-body">I'm an example component.</div>
                 </div>
-                <a href="/home" style="background: aqua">Home</a>
+                <a href="/" style="background: aqua">Home</a>
                 <br />
-                <router-link to="/home">Home {Router Link}</router-link>
+                <router-link to="/">Home {Router Link}</router-link>
                 <br />
                 <button @click="pushToHome">Home {Push}</button>
                 <br />
