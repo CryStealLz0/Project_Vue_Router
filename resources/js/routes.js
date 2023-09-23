@@ -3,6 +3,7 @@ import Home from "./components/HomeComponent.vue";
 import User from "./components/UserComponent.vue";
 import Hello from "./components/HelloComponent.vue";
 import Bye from "./components/ByeComponent.vue";
+import NotFound from "./components/NotFoundComponent.vue";
 
 export const routes = [
     {
@@ -29,5 +30,10 @@ export const routes = [
                 component: Bye,
             },
         ],
+    },
+    {
+        path: "/:pathMatch(.*)*",
+        name: "notFound",
+        component: NotFound,
     },
 ];

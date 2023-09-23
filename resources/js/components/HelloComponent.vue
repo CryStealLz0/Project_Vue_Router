@@ -1,3 +1,3 @@
 <template>
-    <h1>Hello</h1>
+    <h1>Hello {{ $route.params.username }}</h1>
 </template>
