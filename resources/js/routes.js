@@ -25,6 +25,14 @@ export const routes = [
         component: Example,
     },
     {
+        name: "About",
+        path: "/about",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "./components/AboutComponent.vue"
+            ),
+    },
+    {
         path: "/user/:username?",
         name: "user",
         component: User,
@@ -39,6 +47,7 @@ export const routes = [
             },
         ],
     },
+
     {
         path: "/:pathMatch(.*)*",
         name: "notFound",

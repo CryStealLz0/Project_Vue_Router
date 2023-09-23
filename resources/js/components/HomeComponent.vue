@@ -9,6 +9,7 @@
         <br />
         <button @click="testQuery">Test Query</button>
         <br />
+        <button @click="about">About</button>
     </div>
 </template>
 
@@ -38,6 +39,9 @@ export default {
 
             // Cara kedua
             this.$router.push("/user/Dimas?id=123");
+        },
+        about() {
+            this.$router.push("/about");
         },
     },
 };
