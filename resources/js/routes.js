@@ -10,9 +10,13 @@ export const routes = [
         path: "/",
         name: "home",
         component: Home,
+        // Dengan alias. ini bisa membuat kita dapat mengakses path dengan "/" dan "/rumah"
+        // alias: "/rumah",
     },
     {
         path: "/rumah",
+        /* dengan redirect kita bisa mengakses rumah dengan "/ruman" namun akan di arahkan / otomatis akan
+         mengubah yang tadinya "/rumah menjadi "/" sesuai redirect nya */
         redirect: "/",
     },
     {

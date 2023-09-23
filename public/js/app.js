@@ -20548,8 +20548,12 @@ var routes = [{
   path: "/",
   name: "home",
   component: _components_HomeComponent_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+  // Dengan alias. ini bisa membuat kita dapat mengakses path dengan "/" dan "/rumah"
+  // alias: "/rumah",
 }, {
   path: "/rumah",
+  /* dengan redirect kita bisa mengakses rumah dengan "/ruman" namun akan di arahkan / otomatis akan
+   mengubah yang tadinya "/rumah menjadi "/" sesuai redirect nya */
   redirect: "/"
 }, {
   path: "/example",
